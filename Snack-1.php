@@ -33,5 +33,22 @@ $partite = [
 </head>
 <body>
     
+    <h1>Risultati partite</h1>
+    <ul>
+        <?php
+
+        for($i=0; $i<count($partite); $i++) {
+            ?>
+
+            <li>
+                <?php echo "{$partite[$i]['casa']} - {$partite[$i]['ospite']} | {$partite[$i]['punti_casa']} - {$partite[$i]['punti_ospite']}" ?>
+            </li>
+
+            <?php
+        }
+        ?>
+
+    </ul>
+
 </body>
 </html>
